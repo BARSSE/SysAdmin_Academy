@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SysAdmin Academy · Mes fiches mémo BTS SIO</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="rain" aria-hidden="true"></canvas>
+<header>
+  <div class="top">
+    <div class="logo">🐧 SysAdmin Academy</div>
+    <div class="dd" id="dd">
+      <button id="ddb" aria-haspopup="true" aria-expanded="false">📂 Choisir une section ▾</button>
+      <ul id="ddl"></ul>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="hero">
+    <svg class="shield" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset="0.55" stop-color="#3b82f6"/><stop offset="1" stop-color="#10b981"/></linearGradient></defs><path d="M32 4 56 13v18c0 15-10 25-24 29C18 56 8 46 8 31V13z" fill="none" stroke="url(#g)" stroke-width="3"/><rect x="22" y="29" width="20" height="15" rx="3" fill="url(#g)"/><path d="M26 29v-5a6 6 0 0 1 12 0v5" fill="none" stroke="url(#g)" stroke-width="3"/></svg>
+    <div class="logobox"><img src="img/logo-sysadmin-academy.jpg" alt="Logo SysAdmin Academy"></div><h1 class="sr">SysAdmin Academy</h1>
+    <p class="sub">Mes fiches mémo de BTS SIO · option SISR · 2<sup>e</sup> année</p>
+    <div class="term">$ <span class="t">sudo apt install reussite-bts</span><i></i></div>
+    <div class="net"><span style="left:0">🖥️</span><span style="right:0">🗄️</span><b></b><b></b><b></b></div>
+  </div>
+
+  <section id="sisr" class="on">
+    <h2>🛡️ SISR</h2>
+    <p class="sub">Solutions d’Infrastructure, Systèmes et Réseaux</p>
+    <div class="grid">
+      <a class="doc" href="docs/sisr/m%C3%A9mento-linux-bts-sio-sisr-debian-ubuntu.pdf" target="_blank" rel="noopener"><span class="ic">🐧</span><span>Les commandes essentielles sous Linux (Debian / Ubuntu)<small>Ouvrir le PDF</small></span></a>
+      <a class="doc" href="docs/sisr/memento-vim-les-commandes-essentielles.pdf" target="_blank" rel="noopener"><span class="ic">✍️</span><span>Les commandes essentielles sous Vim<small>Ouvrir le PDF</small></span></a>
+      <a class="doc" href="docs/sisr/m%C3%A9mo-bash-bts-sio-2-sisr.pdf" target="_blank" rel="noopener"><span class="ic">📜</span><span>Les scripts Bash<small>Ouvrir le PDF</small></span></a>
+      <a class="doc" href="docs/sisr/m%C3%A9mo-dhcp-_-agent-relais-dhcp-bts-sio-option-sisr.pdf" target="_blank" rel="noopener"><span class="ic">📡</span><span>DHCP et agent relais DHCP<small>Ouvrir le PDF</small></span></a>
+      <a class="doc" href="docs/sisr/m%C3%A9mo-rsyslog-_-journalisation-bts-sio-sisr.pdf" target="_blank" rel="noopener"><span class="ic">🪵</span><span>Rsyslog, journalisation et RainerScript<small>Ouvrir le PDF</small></span></a>
+      <a class="doc" href="docs/sisr/m%C3%A9mo-powershell-bts-sio-sisr-2e-ann%C3%A9e.pdf" target="_blank" rel="noopener"><span class="ic">⚡</span><span>PowerShell<small>Ouvrir le PDF</small></span></a>
+      <a class="doc" href="docs/sisr/m%C3%A9mo-radius-bts-sio-2e-ann%C3%A9e-option-sisr.pdf" target="_blank" rel="noopener"><span class="ic">🔐</span><span>RADIUS : authentification AAA et 802.1X<small>Ouvrir le PDF</small></span></a>
+      <a class="doc" href="docs/sisr/m%C3%A9mo-glpi-bts-sio-2e-ann%C3%A9e-option-sisr.pdf" target="_blank" rel="noopener"><span class="ic">🎫</span><span>GLPI : gestion de parc et helpdesk<small>Ouvrir le PDF</small></span></a>
+      <a class="doc" href="docs/sisr/m%C3%A9mo-rancid-bts-sisr-sisr2.pdf" target="_blank" rel="noopener"><span class="ic">💾</span><span>RANCID : sauvegarde des configurations réseau<small>Ouvrir le PDF</small></span></a>
+    </div>
+  </section>
+
+  <section id="cejm"><h2>⚖️ CEJM</h2><p class="sub">Culture économique, juridique et managériale</p><div class="grid">
+<a class="doc" href="docs/cejm/Fiche_01_Verbes_directeurs.pdf" target="_blank" rel="noopener"><span class="ic">🎯</span><span>Comprendre les consignes : les verbes directeurs<small>Ouvrir le PDF</small></span></a>
+<a class="doc" href="docs/cejm/Fiche_02_Syllogisme_juridique-1.pdf" target="_blank" rel="noopener"><span class="ic">⚖️</span><span>Résoudre un cas pratique : le syllogisme juridique<small>Ouvrir le PDF</small></span></a>
+<a class="doc" href="docs/cejm/Fiche_03_Decision_de_justice.pdf" target="_blank" rel="noopener"><span class="ic">🏛️</span><span>Analyser une décision de justice<small>Ouvrir le PDF</small></span></a>
+<a class="doc" href="docs/cejm/Fiche_04_Analyser_un_contrat_-2-.pdf" target="_blank" rel="noopener"><span class="ic">📝</span><span>Lire et analyser un contrat<small>Ouvrir le PDF</small></span></a>
+<a class="doc" href="docs/cejm/Fiche_05_Formation_du_contrat.pdf" target="_blank" rel="noopener"><span class="ic">🤝</span><span>La formation du contrat<small>Ouvrir le PDF</small></span></a>
+<a class="doc" href="docs/cejm/Fiche_06_Contrat_de_vente_electronique.pdf" target="_blank" rel="noopener"><span class="ic">🛒</span><span>Le contrat de vente électronique<small>Ouvrir le PDF</small></span></a>
+<a class="doc" href="docs/cejm/Fiche_07_Matrice_PESTEL.pdf" target="_blank" rel="noopener"><span class="ic">🌍</span><span>La matrice PESTEL : analyser l’environnement de l’entreprise<small>Ouvrir le PDF</small></span></a>
+<a class="doc" href="docs/cejm/Fiche_08_Analyser_un_marche.pdf" target="_blank" rel="noopener"><span class="ic">📈</span><span>Analyser un marché<small>Ouvrir le PDF</small></span></a>
+</div></section>
+  <section id="mathinfo"><h2>🧮 Maths pour l’informatique</h2><p class="sub">Logique, binaire, algèbre de Boole…</p><div class="grid">
+<a class="doc" href="docs/maths-informatique/Fiche-de-r%C3%A9vision-Les-matrices.pdf" target="_blank" rel="noopener"><span class="ic">🔢</span><span>Les matrices<small>Ouvrir le PDF</small></span></a>
+</div></section>
+  <section id="mathapp"><h2>📐 Maths approfondies</h2><p class="sub">Pour aller plus loin</p><div class="grid">
+<a class="doc" href="docs/maths-approfondies/Fiche-de-r%C3%A9vision-Fonctions-d%C3%A9rivation-BTS-SIO.pdf" target="_blank" rel="noopener"><span class="ic">📉</span><span>Fonctions et dérivation<small>Ouvrir le PDF</small></span></a>
+</div></section>
+</main>
+<footer>made with ♥ et beaucoup de <code>sudo</code> · aucun paquet n’a été perdu pendant la fabrication</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
