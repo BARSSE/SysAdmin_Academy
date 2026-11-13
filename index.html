@@ -7,10 +7,10 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<canvas id="rain" aria-hidden="true"></canvas>
+<canvas id="bg" aria-hidden="true"></canvas>
 <header>
   <div class="top">
-    <div class="logo">🐧 SysAdmin Academy</div>
+    <img class="logo" src="img/logo-texte.png" alt="SysAdmin Academy">
     <div class="dd" id="dd">
       <button id="ddb" aria-haspopup="true" aria-expanded="false">📂 Choisir une section ▾</button>
       <ul id="ddl"></ul>
@@ -19,44 +19,47 @@
 </header>
 <main>
   <div class="hero">
-    <svg class="shield" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset="0.55" stop-color="#3b82f6"/><stop offset="1" stop-color="#10b981"/></linearGradient></defs><path d="M32 4 56 13v18c0 15-10 25-24 29C18 56 8 46 8 31V13z" fill="none" stroke="url(#g)" stroke-width="3"/><rect x="22" y="29" width="20" height="15" rx="3" fill="url(#g)"/><path d="M26 29v-5a6 6 0 0 1 12 0v5" fill="none" stroke="url(#g)" stroke-width="3"/></svg>
-    <div class="logobox"><img src="img/logo-sysadmin-academy.jpg" alt="Logo SysAdmin Academy"></div><h1 class="sr">SysAdmin Academy</h1>
-    <p class="sub">Mes fiches mémo de BTS SIO · option SISR · 2<sup>e</sup> année</p>
-    <div class="term">$ <span class="t">sudo apt install reussite-bts</span><i></i></div>
-    <div class="net"><span style="left:0">🖥️</span><span style="right:0">🗄️</span><b></b><b></b><b></b></div>
+    <h1>Mes fiches mémo</h1>
+    <p class="sub">BTS SIO · option SISR · 2<sup>e</sup> année</p>
+    <div class="term">$ <span id="tt"></span><i></i></div>
   </div>
-
-  <section id="sisr" class="on">
-    <h2>🛡️ SISR</h2>
-    <p class="sub">Solutions d’Infrastructure, Systèmes et Réseaux</p>
-    <div class="grid">
-      <a class="doc" href="docs/sisr/m%C3%A9mento-linux-bts-sio-sisr-debian-ubuntu.pdf" target="_blank" rel="noopener"><span class="ic">🐧</span><span>Les commandes essentielles sous Linux (Debian / Ubuntu)<small>Ouvrir le PDF</small></span></a>
-      <a class="doc" href="docs/sisr/memento-vim-les-commandes-essentielles.pdf" target="_blank" rel="noopener"><span class="ic">✍️</span><span>Les commandes essentielles sous Vim<small>Ouvrir le PDF</small></span></a>
-      <a class="doc" href="docs/sisr/m%C3%A9mo-bash-bts-sio-2-sisr.pdf" target="_blank" rel="noopener"><span class="ic">📜</span><span>Les scripts Bash<small>Ouvrir le PDF</small></span></a>
-      <a class="doc" href="docs/sisr/m%C3%A9mo-dhcp-_-agent-relais-dhcp-bts-sio-option-sisr.pdf" target="_blank" rel="noopener"><span class="ic">📡</span><span>DHCP et agent relais DHCP<small>Ouvrir le PDF</small></span></a>
-      <a class="doc" href="docs/sisr/m%C3%A9mo-rsyslog-_-journalisation-bts-sio-sisr.pdf" target="_blank" rel="noopener"><span class="ic">🪵</span><span>Rsyslog, journalisation et RainerScript<small>Ouvrir le PDF</small></span></a>
-      <a class="doc" href="docs/sisr/m%C3%A9mo-powershell-bts-sio-sisr-2e-ann%C3%A9e.pdf" target="_blank" rel="noopener"><span class="ic">⚡</span><span>PowerShell<small>Ouvrir le PDF</small></span></a>
-      <a class="doc" href="docs/sisr/m%C3%A9mo-radius-bts-sio-2e-ann%C3%A9e-option-sisr.pdf" target="_blank" rel="noopener"><span class="ic">🔐</span><span>RADIUS : authentification AAA et 802.1X<small>Ouvrir le PDF</small></span></a>
-      <a class="doc" href="docs/sisr/m%C3%A9mo-glpi-bts-sio-2e-ann%C3%A9e-option-sisr.pdf" target="_blank" rel="noopener"><span class="ic">🎫</span><span>GLPI : gestion de parc et helpdesk<small>Ouvrir le PDF</small></span></a>
-      <a class="doc" href="docs/sisr/m%C3%A9mo-rancid-bts-sisr-sisr2.pdf" target="_blank" rel="noopener"><span class="ic">💾</span><span>RANCID : sauvegarde des configurations réseau<small>Ouvrir le PDF</small></span></a>
-    </div>
-  </section>
-
-  <section id="cejm"><h2>⚖️ CEJM</h2><p class="sub">Culture économique, juridique et managériale</p><div class="grid">
-<a class="doc" href="docs/cejm/Fiche_01_Verbes_directeurs.pdf" target="_blank" rel="noopener"><span class="ic">🎯</span><span>Comprendre les consignes : les verbes directeurs<small>Ouvrir le PDF</small></span></a>
-<a class="doc" href="docs/cejm/Fiche_02_Syllogisme_juridique-1.pdf" target="_blank" rel="noopener"><span class="ic">⚖️</span><span>Résoudre un cas pratique : le syllogisme juridique<small>Ouvrir le PDF</small></span></a>
-<a class="doc" href="docs/cejm/Fiche_03_Decision_de_justice.pdf" target="_blank" rel="noopener"><span class="ic">🏛️</span><span>Analyser une décision de justice<small>Ouvrir le PDF</small></span></a>
-<a class="doc" href="docs/cejm/Fiche_04_Analyser_un_contrat_-2-.pdf" target="_blank" rel="noopener"><span class="ic">📝</span><span>Lire et analyser un contrat<small>Ouvrir le PDF</small></span></a>
-<a class="doc" href="docs/cejm/Fiche_05_Formation_du_contrat.pdf" target="_blank" rel="noopener"><span class="ic">🤝</span><span>La formation du contrat<small>Ouvrir le PDF</small></span></a>
-<a class="doc" href="docs/cejm/Fiche_06_Contrat_de_vente_electronique.pdf" target="_blank" rel="noopener"><span class="ic">🛒</span><span>Le contrat de vente électronique<small>Ouvrir le PDF</small></span></a>
-<a class="doc" href="docs/cejm/Fiche_07_Matrice_PESTEL.pdf" target="_blank" rel="noopener"><span class="ic">🌍</span><span>La matrice PESTEL : analyser l’environnement de l’entreprise<small>Ouvrir le PDF</small></span></a>
-<a class="doc" href="docs/cejm/Fiche_08_Analyser_un_marche.pdf" target="_blank" rel="noopener"><span class="ic">📈</span><span>Analyser un marché<small>Ouvrir le PDF</small></span></a>
+  <section id="sisr"><h2><span>🛡️ SISR</span><em class="pill">15 fiches</em></h2><p class="sub">Solutions d’Infrastructure, Systèmes et Réseaux</p><div class="viz"><div class="net"><span style="left:0">🖥️</span><span style="right:0;animation-delay:-1.5s">🗄️</span><b></b><b></b><b></b></div></div><div class="grid">
+<a class="doc" style="--i:0" href="docs/sisr/m%C3%A9mento-linux-bts-sio-sisr-debian-ubuntu.pdf" target="_blank" rel="noopener"><span class="ic">🐧</span><span>Les commandes essentielles sous Linux (Debian / Ubuntu)<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:1" href="docs/sisr/memento-vim-les-commandes-essentielles.pdf" target="_blank" rel="noopener"><span class="ic">✍️</span><span>Les commandes essentielles sous Vim<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:2" href="docs/sisr/m%C3%A9mo-bash-bts-sio-2-sisr.pdf" target="_blank" rel="noopener"><span class="ic">📜</span><span>Les scripts Bash<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:3" href="docs/sisr/m%C3%A9mo-powershell-bts-sio-sisr-2e-ann%C3%A9e.pdf" target="_blank" rel="noopener"><span class="ic">⚡</span><span>PowerShell<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:4" href="docs/sisr/M%C3%A9mo-Windows-Server-BTS-SIO-2-SISR.pdf" target="_blank" rel="noopener"><span class="ic">🪟</span><span>Windows Server : AD DS, GPO, DNS, DHCP et FTP<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:5" href="docs/sisr/m%C3%A9mo-dhcp-_-agent-relais-dhcp-bts-sio-option-sisr.pdf" target="_blank" rel="noopener"><span class="ic">📡</span><span>DHCP et agent relais DHCP<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:6" href="docs/sisr/m%C3%A9mo-rsyslog-_-journalisation-bts-sio-sisr.pdf" target="_blank" rel="noopener"><span class="ic">🪵</span><span>Rsyslog, journalisation et RainerScript<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:7" href="docs/sisr/M%C3%A9mo-SNMP-BTS-SIO-2-SISR.pdf" target="_blank" rel="noopener"><span class="ic">📊</span><span>SNMP : supervision réseau<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:8" href="docs/sisr/m%C3%A9mo-radius-bts-sio-2e-ann%C3%A9e-option-sisr.pdf" target="_blank" rel="noopener"><span class="ic">🔐</span><span>RADIUS : authentification AAA et 802.1X<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:9" href="docs/sisr/m%C3%A9mo-glpi-bts-sio-2e-ann%C3%A9e-option-sisr.pdf" target="_blank" rel="noopener"><span class="ic">🎫</span><span>GLPI : gestion de parc et helpdesk<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:10" href="docs/sisr/m%C3%A9mo-rancid-bts-sisr-sisr2.pdf" target="_blank" rel="noopener"><span class="ic">💾</span><span>RANCID : sauvegarde des configurations réseau<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:11" href="docs/sisr/M%C3%A9mo-OMV-OpenMediaVault-BTS-SIO-2-SISR.pdf" target="_blank" rel="noopener"><span class="ic">🗄️</span><span>OMV (OpenMediaVault) : serveur NAS<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:12" href="docs/sisr/M%C3%A9mo-Postfix-BTS-SIO-2-SISR.pdf" target="_blank" rel="noopener"><span class="ic">📧</span><span>Postfix : serveur de messagerie<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:13" href="docs/sisr/M%C3%A9mento_WordPress_-_BTS_SIO_SISR.pdf" target="_blank" rel="noopener"><span class="ic">📰</span><span>WordPress<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:14" href="docs/sisr/m%C3%A9mento-dokuwiki-bts-sio-sisr.pdf" target="_blank" rel="noopener"><span class="ic">📖</span><span>DokuWiki<small>Ouvrir le PDF</small></span></a>
 </div></section>
-  <section id="mathinfo"><h2>🧮 Maths pour l’informatique</h2><p class="sub">Logique, binaire, algèbre de Boole…</p><div class="grid">
-<a class="doc" href="docs/maths-informatique/Fiche-de-r%C3%A9vision-Les-matrices.pdf" target="_blank" rel="noopener"><span class="ic">🔢</span><span>Les matrices<small>Ouvrir le PDF</small></span></a>
+  <section id="cejm"><h2><span>⚖️ CEJM</span><em class="pill">8 fiches</em></h2><p class="sub">Culture économique, juridique et managériale</p><div class="viz"><span class="big">📜</span><svg class="scale" viewBox="0 0 220 96" aria-hidden="true"><line class="st" x1="110" y1="22" x2="110" y2="86"/><line class="st" x1="76" y1="87" x2="144" y2="87"/><g class="beam"><line x1="34" y1="22" x2="186" y2="22"/><g class="pl"><path d="M34 22 18 58M34 22 50 58M14 58h40a20 12 0 0 1-40 0z"/></g><g class="pr"><path d="M186 22 170 58M186 22 202 58M166 58h40a20 12 0 0 1-40 0z"/></g></g></svg><span class="big" style="animation-delay:-1.3s">🤝</span></div><div class="grid">
+<a class="doc" style="--i:0" href="docs/cejm/Fiche_01_Verbes_directeurs.pdf" target="_blank" rel="noopener"><span class="ic">🎯</span><span>Comprendre les consignes : les verbes directeurs<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:1" href="docs/cejm/Fiche_02_Syllogisme_juridique-1.pdf" target="_blank" rel="noopener"><span class="ic">⚖️</span><span>Résoudre un cas pratique : le syllogisme juridique<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:2" href="docs/cejm/Fiche_03_Decision_de_justice.pdf" target="_blank" rel="noopener"><span class="ic">🏛️</span><span>Analyser une décision de justice<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:3" href="docs/cejm/Fiche_04_Analyser_un_contrat_-2-.pdf" target="_blank" rel="noopener"><span class="ic">📝</span><span>Lire et analyser un contrat<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:4" href="docs/cejm/Fiche_05_Formation_du_contrat.pdf" target="_blank" rel="noopener"><span class="ic">🤝</span><span>La formation du contrat<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:5" href="docs/cejm/Fiche_06_Contrat_de_vente_electronique.pdf" target="_blank" rel="noopener"><span class="ic">🛒</span><span>Le contrat de vente électronique<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:6" href="docs/cejm/Fiche_07_Matrice_PESTEL.pdf" target="_blank" rel="noopener"><span class="ic">🌍</span><span>La matrice PESTEL : analyser l’environnement de l’entreprise<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:7" href="docs/cejm/Fiche_08_Analyser_un_marche.pdf" target="_blank" rel="noopener"><span class="ic">📈</span><span>Analyser un marché<small>Ouvrir le PDF</small></span></a>
 </div></section>
-  <section id="mathapp"><h2>📐 Maths approfondies</h2><p class="sub">Pour aller plus loin</p><div class="grid">
-<a class="doc" href="docs/maths-approfondies/Fiche-de-r%C3%A9vision-Fonctions-d%C3%A9rivation-BTS-SIO.pdf" target="_blank" rel="noopener"><span class="ic">📉</span><span>Fonctions et dérivation<small>Ouvrir le PDF</small></span></a>
+  <section id="mathinfo"><h2><span>🧮 Maths pour l’informatique</span><em class="pill">3 fiches</em></h2><p class="sub">Matrices, logique, binaire…</p><div class="viz"><div class="bits" id="bits"></div></div><div class="grid">
+<a class="doc" style="--i:0" href="docs/maths-informatique/m%C3%A9mo-num%C3%A9ration-_-changement-de-base-bts-sio-sisr.pdf" target="_blank" rel="noopener"><span class="ic">🔟</span><span>Numération et changement de base<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:1" href="docs/maths-informatique/Fiche-de-r%C3%A9vision-Les-matrices.pdf" target="_blank" rel="noopener"><span class="ic">🔢</span><span>Les matrices<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:2" href="docs/maths-informatique/m%C3%A9mo-graphes-mpm-_-pert-bts-sio-sisr.pdf" target="_blank" rel="noopener"><span class="ic">🕸️</span><span>Graphes : méthodes MPM et PERT<small>Ouvrir le PDF</small></span></a>
+</div></section>
+  <section id="mathapp"><h2><span>📐 Maths approfondies</span><em class="pill">4 fiches</em></h2><p class="sub">Pour aller plus loin</p><div class="viz"><svg class="cv" viewBox="0 0 600 100" aria-hidden="true"><line class="ax" x1="0" y1="52" x2="600" y2="52"/><path id="cp" d=""/><line id="ct" x1="0" y1="0" x2="0" y2="0"/><circle id="cd" r="6" cx="0" cy="0"/></svg></div><div class="grid">
+<a class="doc" style="--i:0" href="docs/maths-approfondies/Fiche-de-r%C3%A9vision-Fonctions-d%C3%A9rivation-BTS-SIO.pdf" target="_blank" rel="noopener"><span class="ic">📉</span><span>Fonctions et dérivation<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:1" href="docs/maths-approfondies/M%C3%A9mo-Suites-num%C3%A9riques-arithm%C3%A9tiques-g%C3%A9om%C3%A9triques-et-r%C3%A9currence-BTS-SIO-SISR-maths-approfondies.pdf" target="_blank" rel="noopener"><span class="ic">🔁</span><span>Suites numériques et raisonnement par récurrence<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:2" href="docs/maths-approfondies/M%C3%A9mo-Probabilit%C3%A9s-BTS-SIO-SISR-maths-approfondies.pdf" target="_blank" rel="noopener"><span class="ic">🎲</span><span>Les probabilités<small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:3" href="docs/maths-approfondies/M%C3%A9mo-Statistiques-%C3%A0-deux-variables-BTS-SIO-SISR-maths-approfondies.pdf" target="_blank" rel="noopener"><span class="ic">📊</span><span>Statistiques à deux variables<small>Ouvrir le PDF</small></span></a>
 </div></section>
 </main>
 <footer>made with ♥ et beaucoup de <code>sudo</code> · aucun paquet n’a été perdu pendant la fabrication</footer>
