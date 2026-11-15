@@ -53,24 +53,4 @@ a.doc small{display:block;color:var(--muted);margin-top:.15rem}
 a.doc:active{transform:scale(.97)}
 footer{position:relative;z-index:1;text-align:center;color:var(--muted);padding:2rem 1rem;font-size:.85rem}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-.viz{position:relative;margin:.2rem 0 1.2rem;min-height:96px;border:1px dashed var(--line);border-radius:14px;background:linear-gradient(90deg,#8b5cf61a,#10b9811a);overflow:hidden;display:flex;align-items:center;justify-content:center;gap:.8rem;padding:.4rem .8rem}
-.viz .net{width:94%;margin:0}
-.big{font-size:2rem;animation:float 2.6s ease-in-out infinite}
-.scale{height:84px;width:auto}
-.scale *{fill:none;stroke:var(--violet);stroke-width:3;stroke-linecap:round}
-.scale .beam{transform-origin:110px 22px;animation:tip 3.6s ease-in-out infinite}
-.scale .pl{transform-origin:34px 22px;animation:untip 3.6s ease-in-out infinite}
-.scale .pr{transform-origin:186px 22px;animation:untip 3.6s ease-in-out infinite}
-.scale .st{stroke:var(--em)}
-@keyframes tip{0%,100%{transform:rotate(-9deg)}50%{transform:rotate(9deg)}}
-@keyframes untip{0%,100%{transform:rotate(9deg)}50%{transform:rotate(-9deg)}}
-.bits{display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;justify-content:center}
-.bit{width:30px;height:38px;display:grid;place-items:center;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--muted);transition:all .25s}
-.bit.on{color:#fff;background:linear-gradient(160deg,var(--violet),var(--em));border-color:var(--em);box-shadow:0 0 12px var(--em);transform:translateY(-3px)}
-.bv{margin-left:.6rem;color:var(--em)}
-.cv{width:100%;height:92px}
-.cv path{fill:none;stroke:var(--violet);stroke-width:3}
-.cv .ax{stroke:var(--line);stroke-width:1.5}
-.cv #ct{stroke:var(--em);stroke-width:2.5}
-.cv #cd{fill:var(--blue);filter:drop-shadow(0 0 5px var(--blue))}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
