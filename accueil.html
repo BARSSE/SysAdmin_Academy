@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SysAdmin Academy · Accueil</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<header>
+  <div class="top">
+    <a href="accueil.html" aria-label="Accueil"><img class="logo" src="img/logo-texte.png" alt="SysAdmin Academy"></a>
+    <div class="tools"></div>
+  </div>
+</header>
+<main>
+  <div class="hero">
+    <svg class="radar" viewBox="0 0 200 200" aria-hidden="true"><defs><linearGradient id="sw" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#10b981" stop-opacity="0"/><stop offset="1" stop-color="#10b981" stop-opacity=".55"/></linearGradient></defs><circle class="r" cx="100" cy="100" r="92"/><circle class="r" cx="100" cy="100" r="62"/><circle class="r" cx="100" cy="100" r="32"/><path class="r" d="M100 8v184M8 100h184"/><g class="sweep"><path d="M100 100V8A92 92 0 0 1 192 100z" fill="url(#sw)" transform="rotate(-90 100 100)"/></g><circle class="blip" cx="140" cy="60" r="4"/><circle class="blip" cx="60" cy="120" r="4" style="animation-delay:-1.2s"/><circle class="blip" cx="125" cy="140" r="4" style="animation-delay:-2.4s"/><circle class="blip" cx="80" cy="50" r="4" style="animation-delay:-3.3s"/></svg>
+    <h1>Révise ton BTS SIO</h1>
+    <p class="sub">Fiches mémo et exercices · option SISR · 2<sup>e</sup> année</p>
+    <div class="term">$ <span id="tt"></span><i></i></div>
+    <div class="cta">
+      <a class="bigbtn" href="index.html"><span class="ic">📚</span><b>Accéder aux cours</b><small>Tes fiches mémo, classées par section</small></a>
+      <a class="bigbtn" href="exercices.html"><span class="ic">🧪</span><b>Accéder aux exercices</b><small>QCM et calculs pour t’entraîner</small></a>
+    </div>
+    <div class="stats"><div><em data-n="30">0</em><span>fiches</span></div><div><em data-n="4">0</em><span>sections</span></div><div><em data-n="92">0</em><span>exercices</span></div></div>
+  </div>
+</main>
+<footer>made with ♥ et beaucoup de <code>sudo</code> · aucun paquet n’a été perdu pendant la fabrication</footer>
+<script src="js/bg.js"></script><script src="js/home.js"></script>
+</body>
+</html>
