@@ -48,5 +48,5 @@ function type(el,s){clearTimeout(el._t);if(rm){el.textContent=s;return}el.textCo
 var last=0;
 function loop(ts){requestAnimationFrame(loop);if(ts-last<33)return;last=ts;t+=.033;draw();if(mode==="mathinfo")bits(Math.floor(t*1.4)&255);else if(mode==="mathapp")curve(t*45)}
 if(!rm)requestAnimationFrame(loop);else{draw();bits(13);curve(220)}
-return{set:set,type:type,rm:rm};
+return{set:set,type:type,rm:rm,refresh:function(){setup()}};
 })();
