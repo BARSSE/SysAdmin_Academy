@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SysAdmin Academy · Infos sur le BTS</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<header>
+  <div class="top">
+    <a href="accueil.html" aria-label="Accueil"><img class="logo" src="img/logo-texte.png" alt="SysAdmin Academy"></a>
+    <div class="tools"><nav class="nav"><a href="accueil.html">🏠 Accueil</a><a href="index.html">📚 Cours</a><a href="exercices.html">🧪 Exercices</a></nav></div>
+  </div>
+</header>
+<main class="infos">
+  <div class="hero">
+    <div class="bigico" aria-hidden="true">🎓</div>
+    <h1>Infos sur le BTS</h1>
+    <p class="sub">BTS SIO · option SISR · référentiel en vigueur depuis la session 2025</p>
+    <div class="term">$ <span id="tt"></span><i></i></div>
+    <div class="row"><a class="btn alt homebtn" href="accueil.html">🏠 Retour à l’accueil</a></div>
+  </div>
+
+  <div class="viz"><div class="blocs" aria-hidden="true">
+    <span style="--i:0;--c:var(--violet)">B1</span><span style="--i:1;--c:var(--violet)">B2</span><span style="--i:2;--c:var(--violet)">B3</span><span style="--i:3;--c:var(--blue)">B4</span><span style="--i:4;--c:var(--blue)">B5</span><span style="--i:5;--c:var(--em)">B6</span><span style="--i:6;--c:var(--em)">B7</span>
+  </div></div>
+
+  <div class="stats"><div><em data-n="7">0</em><span>blocs</span></div><div><em data-n="7">0</em><span>épreuves</span></div><div><em data-n="22">0</em><span>coefficients</span></div></div>
+  <div class="coef"><p>Les 3 blocs professionnels pèsent <b>12 coefficients sur 22</b></p><div class="bar"><i></i></div></div>
+
+  <section class="on" id="infos"><h2><span>📋 Les fiches infos</span><em class="pill">2 fiches</em></h2><p class="sub">Tout comprendre à l’organisation du diplôme</p>
+  <div class="grid">
+<a class="doc" style="--i:0" href="docs/infos-bts/fiche-blocs-de-competences-bts-sio-sisr.pdf" target="_blank" rel="noopener"><span class="ic">🧩</span><span>Les blocs de compétences du BTS SIO option SISR<span class="desc">Les 7 blocs du diplôme (3 professionnels, 4 généraux) avec leur unité, leur épreuve et leur coefficient, les compétences évaluées dans chaque bloc professionnel et les blocs facultatifs.</span><small>Ouvrir le PDF</small></span></a>
+<a class="doc" style="--i:1" href="docs/infos-bts/fiche-epreuves-bts-sio-sisr.pdf" target="_blank" rel="noopener"><span class="ic">📝</span><span>Les épreuves du BTS SIO option SISR<span class="desc">Les épreuves E1 à E7 et les épreuves facultatives : durée, coefficient, forme (CCF ou ponctuelle), déroulement, répartition sur les deux ans et conditions du rattrapage.</span><small>Ouvrir le PDF</small></span></a>
+  </div></section>
+</main>
+<footer>made with ♥ et beaucoup de <code>sudo</code> · aucun paquet n’a été perdu pendant la fabrication</footer>
+<script src="js/bg.js"></script><script src="js/infos.js"></script>
+</body>
+</html>
