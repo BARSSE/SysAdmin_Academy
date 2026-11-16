@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SysAdmin Academy · Flashcards</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/common.js"></script>
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<header>
+  <div class="top">
+    <a href="accueil.html" aria-label="Accueil"><img class="logo" src="img/logo-texte.png" alt="SysAdmin Academy"></a>
+    <div class="tools"><nav class="nav"><a href="accueil.html">🏠 Accueil</a><a href="index.html">📚 Cours</a><a href="exercices.html">🧪 Exercices</a><a href="infos.html">🎓 Infos BTS</a></nav></div>
+  </div>
+</header>
+<main>
+  <div class="hero">
+    <div class="bigico" aria-hidden="true">🃏</div>
+    <h1>Flashcards</h1>
+    <p class="sub">64 cartes : clique sur la carte pour la retourner</p>
+    <div class="chips"><button class="chip" data-id="sig" aria-pressed="true"><span class="ci">📖</span><b>Définitions</b><small>30 cartes</small></button><button class="chip" data-id="por" aria-pressed="false"><span class="ci">🔌</span><b>Ports</b><small>22 cartes</small></button><button class="chip" data-id="cmd" aria-pressed="false"><span class="ci">⌨️</span><b>Commandes</b><small>12 cartes</small></button><button class="chip" data-id="all" aria-pressed="false"><span class="ci">🎲</span><b>Tout</b><small>64 cartes</small></button></div>
+  </div>
+  <div class="fcw"><div class="fc" id="fc"><div class="in"><div class="f" id="fq"></div><div class="b" id="fa"></div></div></div>
+  <div class="bar"><i id="pb"></i></div><p class="sub center" id="cnt"></p>
+  <div class="row"><button class="btn" id="pv">← Précédente</button><button class="btn alt" id="fl">🔄 Retourner</button><button class="btn" id="nx">Suivante →</button><button class="btn alt" id="sh">🔀 Mélanger</button></div></div>
+</main>
+<footer>made with ♥ et beaucoup de <code>sudo</code> · aucun paquet n’a été perdu pendant la fabrication</footer>
+<script src="js/bg.js"></script><script src="js/data.js"></script><script src="js/flashcards.js"></script>
+</body>
+</html>

@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>SysAdmin Academy · Exercices</title>
 <link rel="stylesheet" href="css/style.css">
+<script src="js/common.js"></script>
 </head>
 <body>
 <canvas id="bg" aria-hidden="true"></canvas>
@@ -20,12 +21,14 @@
     <p class="sub">Choisis une catégorie et teste-toi</p>
     <div class="term">$ <span id="tt"></span><i></i></div>
     <div class="row"><a class="btn alt homebtn" href="accueil.html">🏠 Retour à l’accueil</a></div>
-    <div class="chips" id="chips"><button class="chip" data-id="sisr" aria-pressed="false"><span class="ci">🛡️</span><b>SISR</b><small>26 exercices</small></button><button class="chip" data-id="cejm" aria-pressed="false"><span class="ci">⚖️</span><b>CEJM</b><small>18 exercices</small></button><button class="chip" data-id="mathinfo" aria-pressed="false"><span class="ci">🧮</span><b>Maths pour l’informatique</b><small>26 exercices</small></button><button class="chip" data-id="mathapp" aria-pressed="false"><span class="ci">📐</span><b>Maths approfondies</b><small>22 exercices</small></button></div>
+    <div class="chips" id="chips"><button class="chip" data-id="sisr" aria-pressed="false"><span class="ci">🛡️</span><b>SISR</b><small>26 exercices</small></button><button class="chip" data-id="cejm" aria-pressed="false"><span class="ci">⚖️</span><b>CEJM</b><small>18 exercices</small></button><button class="chip" data-id="mathinfo" aria-pressed="false"><span class="ci">🧮</span><b>Maths pour l’informatique</b><small>26 exercices</small></button><button class="chip" data-id="mathapp" aria-pressed="false"><span class="ci">📐</span><b>Maths approfondies</b><small>22 exercices</small></button><button class="chip" data-id="exam" aria-pressed="false"><span class="ci">⏱️</span><b>Mode examen</b><small>20 questions · 20 min</small></button><button class="chip" data-id="retry" aria-pressed="false"><span class="ci">🔁</span><b>Questions ratées</b><small id="nmiss">0 à refaire</small></button></div>
   </div>
   <section id="sisr"><h2><span>🛡️ SISR</span><em class="pill">26 exercices</em></h2><p class="sub">Solutions d’Infrastructure, Systèmes et Réseaux</p><div class="viz"><div class="net"><span style="left:0">🖥️</span><span style="right:0;animation-delay:-1.5s">🗄️</span><b></b><b></b><b></b></div></div><div class="quiz" id="q-sisr"></div></section>
   <section id="cejm"><h2><span>⚖️ CEJM</span><em class="pill">18 exercices</em></h2><p class="sub">Culture économique, juridique et managériale</p><div class="viz"><span class="big">📜</span><svg class="scale" viewBox="0 0 220 96" aria-hidden="true"><line class="st" x1="110" y1="22" x2="110" y2="86"/><line class="st" x1="76" y1="87" x2="144" y2="87"/><g class="beam"><line x1="34" y1="22" x2="186" y2="22"/><g class="pl"><path d="M34 22 18 58M34 22 50 58M14 58h40a20 12 0 0 1-40 0z"/></g><g class="pr"><path d="M186 22 170 58M186 22 202 58M166 58h40a20 12 0 0 1-40 0z"/></g></g></svg><span class="big" style="animation-delay:-1.3s">🤝</span></div><div class="quiz" id="q-cejm"></div></section>
   <section id="mathinfo"><h2><span>🧮 Maths pour l’informatique</span><em class="pill">26 exercices</em></h2><p class="sub">Matrices, logique, binaire…</p><div class="viz"><div class="bits" id="bits"></div></div><div class="quiz" id="q-mathinfo"></div></section>
   <section id="mathapp"><h2><span>📐 Maths approfondies</span><em class="pill">22 exercices</em></h2><p class="sub">Pour aller plus loin</p><div class="viz"><svg class="cv" viewBox="0 0 600 100" aria-hidden="true"><line class="ax" x1="0" y1="52" x2="600" y2="52"/><path id="cp" d=""/><line id="ct" x1="0" y1="0" x2="0" y2="0"/><circle id="cd" r="6" cx="0" cy="0"/></svg></div><div class="quiz" id="q-mathapp"></div></section>
+  <section id="exam"><h2><span>⏱️ Mode examen</span><em class="pill">20 questions</em></h2><p class="sub">Toutes les catégories mélangées, 20 minutes chrono</p><div class="quiz" id="q-exam"></div></section>
+  <section id="retry"><h2><span>🔁 Questions ratées</span></h2><p class="sub">Refais celles où tu t’es trompée</p><div class="quiz" id="q-retry"></div></section>
 </main>
 <canvas id="cf" aria-hidden="true"></canvas>
 <footer>made with ♥ et beaucoup de <code>sudo</code> · aucun paquet n’a été perdu pendant la fabrication</footer>

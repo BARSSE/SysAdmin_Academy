@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SysAdmin Academy · Ma progression</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/common.js"></script>
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<header>
+  <div class="top">
+    <a href="accueil.html" aria-label="Accueil"><img class="logo" src="img/logo-texte.png" alt="SysAdmin Academy"></a>
+    <div class="tools"><nav class="nav"><a href="accueil.html">🏠 Accueil</a><a href="index.html">📚 Cours</a><a href="exercices.html">🧪 Exercices</a><a href="infos.html">🎓 Infos BTS</a></nav></div>
+  </div>
+</header>
+<main>
+  <div class="hero">
+    <div class="bigico" aria-hidden="true">📈</div>
+    <h1>Ma progression</h1>
+    <p class="sub">Tes scores et tes révisions, gardés dans ce navigateur</p>
+    <div class="row"><a class="btn" href="exercices.html#exam">⏱️ Mode examen</a><a class="btn alt" href="exercices.html#retry">🔁 Refaire mes questions ratées</a></div>
+    <div class="stats" id="st"></div>
+    <div class="coef"><p id="gp"></p><div class="bar"><i id="gb"></i></div></div>
+  </div>
+  <section class="on" id="historique"><h2><span>🕘 Historique des scores</span><em class="pill" id="hn"></em></h2><div class="tbl"><table><thead><tr><th>Date</th><th>Quiz</th><th>Score</th><th>Temps</th></tr></thead><tbody id="hb"></tbody></table></div><div class="row"><button class="btn alt" id="rz">🗑️ Effacer l’historique</button></div></section>
+</main>
+<footer>made with ♥ et beaucoup de <code>sudo</code> · aucun paquet n’a été perdu pendant la fabrication</footer>
+<script src="js/bg.js"></script><script src="js/progression.js"></script>
+</body>
+</html>
