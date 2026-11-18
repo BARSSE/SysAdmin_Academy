@@ -19,12 +19,14 @@
   <div class="hero">
     <div class="bigico" aria-hidden="true">📖</div>
     <h1>Glossaire &amp; ports</h1>
-    <p class="sub">64 sigles et 24 ports à connaître pour le BTS</p>
-    <div class="row"><a class="btn" href="#glossaire">📖 Glossaire</a><a class="btn alt" href="#ports">🔌 Ports courants</a><a class="btn" href="flashcards.html">🃏 Flashcards</a></div>
+    <p class="sub">73 sigles, 94 définitions et 24 ports à connaître pour le BTS</p>
+    <div class="row"><a class="btn" href="#glossaire">📖 Glossaire</a><a class="btn alt" href="#definitions">📚 Définitions</a><a class="btn" href="#ports">🔌 Ports courants</a><a class="btn alt" href="flashcards.html">🃏 Flashcards</a></div>
     <div class="srch"><input id="q" type="search" placeholder="🔍 Filtrer (VLAN, 443, ssh…)" aria-label="Filtrer"><p class="sub" id="qn"></p></div>
   </div>
-  <section class="on" id="glossaire"><h2><span>📖 Glossaire des sigles</span><em class="pill">64 sigles</em></h2><div class="gg" id="gl"></div></section>
+  <section class="on" id="glossaire"><h2><span>📖 Glossaire des sigles</span><em class="pill">73 sigles</em></h2><p class="sub">👆 Clique sur une carte pour voir dans quels cours le terme apparaît</p><div class="gg" id="gl"></div></section>
+  <section class="on" id="definitions"><h2><span>📚 Définitions par matière</span><em class="pill" id="dn"></em></h2><p class="sub">Choisis une matière, puis clique sur un mot pour voir les cours où il apparaît</p><div class="dsel"><label for="mat">Matière</label><select id="mat"><option value="sisr">🛡️ SISR</option><option value="cejm">⚖️ CEJM</option><option value="mathinfo">🧮 Maths pour l’informatique</option><option value="mathapp">📐 Maths approfondies</option></select></div><div class="gg" id="df"></div></section>
   <section class="on" id="ports"><h2><span>🔌 Ports courants</span><em class="pill">24 ports</em></h2><div class="tbl"><table><thead><tr><th>Port</th><th>Protocole</th><th>Service</th><th>À retenir</th></tr></thead><tbody id="pt"></tbody></table></div></section>
+<div class="modal" id="md" hidden><div class="mp" role="dialog" aria-modal="true" aria-labelledby="mt"><button type="button" class="mx" id="mx" aria-label="Fermer">✕</button><h3 id="mt"></h3><p class="mn" id="mn"></p><p class="mdf" id="mdf"></p><div id="ml"></div></div></div>
 </main>
 <footer>made with ♥ et beaucoup de <code>sudo</code> · aucun paquet n’a été perdu pendant la fabrication</footer>
 <script src="js/bg.js"></script><script src="js/data.js"></script><script src="js/glossaire.js"></script>
