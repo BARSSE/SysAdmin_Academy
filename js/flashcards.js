@@ -1,6 +1,7 @@
 (function(){var D=DATA,decks={sig:D.G.map(function(x){return[x[0]+" ?",x[1]+" — "+x[2]]}),
 por:D.P.map(function(x){return["Port de "+x[2]+" ?",x[0]+" / "+x[1]+" — "+x[3]]}),
 cmd:D.C.map(function(x){return[x[0],"<code>"+x[1].replace(/<\/?code>/g,"")+"</code>"]})};
+var dd=[];Object.keys(D.D).forEach(function(k){D.D[k].forEach(function(x){dd.push(["Définition : "+x[0]+" ?",x[1]])})});decks.sig=decks.sig.concat(dd);
 decks.all=[].concat(decks.sig,decks.por,decks.cmd);
 var fc=document.getElementById("fc"),fq=document.getElementById("fq"),fa=document.getElementById("fa"),cnt=document.getElementById("cnt"),bar=document.getElementById("pb"),cur=[],k=0;
 function show(){var c=cur[k];fc.classList.remove("flip");fq.textContent=c[0];fa.innerHTML=c[1];cnt.textContent=(k+1)+" / "+cur.length;bar.style.width=(100*(k+1)/cur.length)+"%"}
