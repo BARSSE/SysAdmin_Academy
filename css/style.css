@@ -268,3 +268,31 @@ a.chip,.chips .chip{--c:var(--violet)}
 .chip[data-id=exam]{--c:#f59e0b}.chip[data-id=retry]{--c:#ef4444}
 .tm{color:var(--em);font-weight:700}
 .tm.low{color:#ef4444;animation:pulse 1s ease-in-out infinite}
+
+/* ===== glossaire : cartes cliquables, pop-up, définitions ===== */
+button.gc{font:inherit;color:var(--text);text-align:left;cursor:pointer;width:100%}
+button.gc:focus-visible{outline:2px solid var(--em);outline-offset:2px}
+.gc .hint{font-style:normal;font-size:.75rem;color:var(--violet);margin-top:.4rem;opacity:0;transform:translateX(-8px);transition:opacity .25s,transform .25s}
+.gc:hover .hint,.gc:focus-visible .hint{opacity:1;transform:none}
+.gc.def{border-left-color:var(--blue)}
+.gc.def b{color:var(--blue)}
+.dsel{display:flex;align-items:center;justify-content:center;gap:.7rem;flex-wrap:wrap;margin:.2rem 0 1.2rem}
+.dsel label{color:var(--muted)}
+.dsel select{font:inherit;color:var(--text);background:var(--panel);border:1px solid var(--violet);border-radius:12px;padding:.7rem 1rem;cursor:pointer;box-shadow:0 0 14px #8b5cf644;transition:border-color .2s,box-shadow .2s}
+.dsel select:focus{outline:none;border-color:var(--em);box-shadow:0 0 18px #10b98166}
+.modal{position:fixed;inset:0;z-index:70;display:grid;place-items:center;padding:1rem;background:#000a;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);animation:mdfade .25s both}
+.modal[hidden]{display:none}
+.mp{position:relative;width:min(580px,100%);max-height:85vh;overflow:auto;background:var(--panel);border:1px solid var(--violet);border-radius:18px;padding:1.5rem;box-shadow:0 20px 60px #0008,0 0 30px #8b5cf655;animation:mdpop .4s cubic-bezier(.2,.8,.2,1) both}
+@keyframes mdfade{from{opacity:0}}
+@keyframes mdpop{from{opacity:0;transform:translateY(24px) scale(.94)}}
+.mp h3{margin:0 2.4rem .2rem 0;color:var(--em);font-size:1.6rem}
+.mp .mn{margin:0 0 .6rem;color:var(--blue);font-size:.85rem}
+.mp .mdf{margin:0 0 1rem;line-height:1.55}
+.mp h4{margin:1rem 0 .5rem;color:var(--violet)}
+.mp ul{list-style:none;margin:0;padding:0;display:grid;gap:.5rem}
+.mp li a{display:block;padding:.65rem .85rem;border:1px solid var(--line);border-radius:10px;color:var(--text);text-decoration:none;transition:transform .2s,border-color .2s,box-shadow .2s}
+.mp li a:hover{transform:translateX(6px);border-color:var(--em);box-shadow:0 0 14px #10b98144}
+.mp li small{display:block;color:var(--muted);margin-top:.15rem}
+.mp .none{color:var(--muted)}
+.mx{position:absolute;top:.8rem;right:.8rem;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:var(--bg);color:var(--text);font:inherit;cursor:pointer;transition:all .2s}
+.mx:hover{border-color:var(--em);transform:rotate(90deg)}
