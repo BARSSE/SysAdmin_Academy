@@ -296,3 +296,9 @@ button.gc:focus-visible{outline:2px solid var(--em);outline-offset:2px}
 .mp .none{color:var(--muted)}
 .mx{position:absolute;top:.8rem;right:.8rem;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:var(--bg);color:var(--text);font:inherit;cursor:pointer;transition:all .2s}
 .mx:hover{border-color:var(--em);transform:rotate(90deg)}
+
+/* ===== mobile : menus déroulants et titres qui ne dépassent pas ===== */
+.dsel{max-width:100%}
+.dsel select{max-width:100%;min-width:0;box-sizing:border-box;text-overflow:ellipsis}
+a.doc .dt,.gc b,.mp h3{overflow-wrap:anywhere}
+@media(max-width:640px){.dsel{flex-direction:column;align-items:stretch;gap:.4rem;padding:0 .2rem}.dsel label{text-align:left}.dsel select{width:100%;font-size:.95rem;padding:.7rem .8rem}}
